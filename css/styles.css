@@ -125,6 +125,7 @@ footer button:hover {
 .fullscreen-text {
     color: #000;
     font-size: min(20vw, 20vh);
+    font-weight: bold;
     padding: 2rem;
     text-align: center;
     width: 100%;
