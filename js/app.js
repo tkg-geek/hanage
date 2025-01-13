@@ -30,7 +30,7 @@ class TextEditor {
         container.className = 'text-container';
         container.innerHTML = `
             <input type="text" class="text-input">
-            <button class="clear-button">✗</button>
+            <button class="clear-button">✕</button>
         `;
         
         this.textAreas.appendChild(container);
