@@ -38,7 +38,8 @@ class FullscreenManager {
 
         // フルスクリーンモードを開始
         if (document.documentElement.requestFullscreen) {
-            document.documentElement.requestFullscreen();
+            document.documentElement.requestFullscreen()
+                .catch(err => console.log('フルスクリーンモードを開始できませんでした:', err));
         }
     }
 
