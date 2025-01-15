@@ -12,8 +12,7 @@ body {
 }
 
 header {
-    padding: 1rem;
-    text-align: center;
+    padding: 0.5rem;
 }
 
 .hamburger {
@@ -26,9 +25,10 @@ header {
 main {
     flex: 1;
     padding: 1rem;
-    max-width: 800px;
-    margin: 0 auto;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .text-container {
@@ -37,7 +37,7 @@ main {
 }
 
 .text-input {
-    width: 100%;
+    width: 90%;
     padding: 0.5rem;
     border: none;
     border-bottom: 1px solid #333;
@@ -53,7 +53,7 @@ main {
 
 .clear-button {
     position: absolute;
-    right: 0;
+    right: 10%;
     top: 50%;
     transform: translateY(-50%);
     background: none;
@@ -139,8 +139,34 @@ footer button:hover {
     display: none;
 }
 
-.header-title {
-    margin: 0;
-    color: #333;
-    font-size: 1.5rem;
+.logo-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 20vh;
+    margin-bottom: 4rem;
+}
+
+.title-logo {
+    max-width: 160px;
+    height: auto;
+}
+
+#textAreas {
+    width: 60%;
+    max-width: 600px;
+}
+
+@media (max-width: 768px) {
+    #textAreas {
+        width: 100%;
+    }
+
+    .logo-container {
+        margin-top: 15vh;
+        margin-bottom: 3rem;
+    }
+
+    .title-logo {
+        max-width: 140px;
+    }
 }
